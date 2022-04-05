@@ -3,9 +3,9 @@ name = "unrecurse"
 version = "0.1.0"
 edition = "2021"
 authors = ["Konstantin Anisimov <rrevenantt@gmail.com>"]
-homepage = "https://github.com/rrevenantt/refstack"
-repository = "https://github.com/rrevenantt/refstack"
-documentation = "https://docs.rs/refstack"
+homepage = "https://github.com/rrevenantt/unrecurse"
+repository = "https://github.com/rrevenantt/unrecurse"
+documentation = "https://docs.rs/unrecurse"
 description = "Helper crate for rewriting your recursive code in iterative way"
 keywords = ["stack","recursive"]
 categories = ["data-structures"]
@@ -18,7 +18,7 @@ license = "MIT"
 arrayvec = "0.7"
 futures-util = { version = "0.3.21", default-features = false, features = ["async-await"] }
 futures-executor = "0.3.21"
-aliasable = "0.1"
+#aliasable = "0.1"
 #qcell = "0.5.0"
 #async_fn_traits = "0.1.1"
 
