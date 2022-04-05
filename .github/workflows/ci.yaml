@@ -34,10 +34,10 @@ jobs:
       - name: Run tests
         run: cargo test --verbose
       - name: miri tests
-        if: startsWith(${{ matrix.rust_version }}, 'nightly')
+        if: startsWith(matrix.rust_version , 'nightly')
         env:
           MIRI_FLAGS: -Zmiri-tag-raw-pointers
-        run:
+        run: |
           rustup component add miri
           cargo miri test
       - name: Formatting
