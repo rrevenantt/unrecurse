@@ -1,0 +1,26 @@
+[package]
+name = "unrecurse"
+version = "0.1.0"
+edition = "2021"
+authors = ["Konstantin Anisimov <rrevenantt@gmail.com>"]
+homepage = "https://github.com/rrevenantt/refstack"
+repository = "https://github.com/rrevenantt/refstack"
+documentation = "https://docs.rs/refstack"
+description = "Helper crate for rewriting your recursive code in iterative way"
+keywords = ["stack","recursive"]
+categories = ["data-structures"]
+readme = "README.md"
+license = "MIT"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+arrayvec = "0.7"
+futures-util = { version = "0.3.21", default-features = false, features = ["async-await"] }
+futures-executor = "0.3.21"
+aliasable = "0.1"
+#qcell = "0.5.0"
+#async_fn_traits = "0.1.1"
+
+[dev-dependencies]
+quickcheck = "1.0.3"
