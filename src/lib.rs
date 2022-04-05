@@ -14,12 +14,13 @@
 //!
 //!
 //! The most simple method to use is `run_async(_backref)`.
-//! You can just convert your current recursive function into async fn. Add `RecursionRef` parameter.
+//! You can just convert your current recursive function into async fn. Add [`Recursion`]/[`RecursionContext`] parameter.
 //! Use it to invoke recursion and voila. It still looks like a recursion so it is still easy to reason about it
 //! but internally it uses async machinery to execute everything sequentially using a dedicated stack for current state.
 //! But currently quite often futures in rust are not very optimized. So if generated future is too big you might want to
 //! resort to the `run` function which allows you to create your own state to store in internal stack.
 //!
+//! MSRV: 1.60
 
 // todo better examples
 
